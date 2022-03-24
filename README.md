@@ -1,6 +1,6 @@
 # jbmyo.xyz
 
-This is the code for my personal website, which is available on [jbmyo.xyz](https://pip.pypa.io/en/stable/). This website is a work in project, but the idea is to put some personnal projects on it. For now, only my latest project is on it.
+This is the code for my personal website, which is available on [jbmyo.xyz](https://www.jbmyo.xyz). This website is a work in project, but the idea is to put some personnal projects on it. For now, only my latest project is on it.
 
 
 ## About the visualizer
