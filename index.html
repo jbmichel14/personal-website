@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sound Visualizer</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+    <script language="javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/addons/p5.sound.min.js"></script>
+    <script src="sketch.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <div class="title-div">
+        <h1 class="home-logo" onClick="window.location.reload()">🚜</h1>
+        <h1 class="title">jbmyo.xyz</h1>
+    </div>
+    
+    <nav class="socials-div">
+        <a href="https://github.com/jbmichel14" target="_blank" class="social">🐙 github</a>
+        <a href="https://www.instagram.com/jbmyo/" target="_blank" class="social">📺 instagram</a>
+    </nav>
+    <main>
+        <div class="container">
+            <h2 class="subtitle">Hello World!</h2>
+            <div class="inner-div">
+                <p>Welcome to jbmyo.xyz, my personal website. I coded this website from scratch to learn the basics of HTML and CSS, without using any frameworks. The goal for this website is to showcase some side projects I made in class or in my free time. The source code for the website and all other personal projects are available on my github.</p>
+            </div>
+        </div>
+        <div id="visualizer" class="container">
+            <h2 class="subtitle">Music Visualizer</h2>
+            <div class="inner-div">
+                <p class="visualizer-text">This project is a music visualizer idea I wanted to create. I used the <a href="https://p5js.org" target="_blank">p5.js</a> library, which is an interpretation of Processing for Javascript. Read more about it on 
+                    <a href="https://github.com/jbmichel14" target="_blank">github</a>. The default song is a beat created by my friend <a href="https://twitter.com/BeatsByMaik" target="_blank">MadMaik</a>. Try to click on the canvas for a surprise...
+                </p>
+                <div>
+                    <p>
+                        <input type="file" id="loadmp3" name="song" accept=".mp3" onchange="loadUploadedMp3(event)" style="display: none;">
+                        <button id="loaddefaultmp3" onclick="loadDefaultMp3()" style="display: none;"></button>
+                    </p>
+                    <div class="mp3-buttons-div">
+                        <label id="loadmp3-label" for="loadmp3" class="load-button">Upload mp3</label>
+                        <p>or</p>
+                        <label id="loaddefaultmp3-label" for="loaddefaultmp3" class="load-button">Use default mp3</label>
+                    </div>
+                    <div class="canvas-div">
+                        <div id="canvas"></div>
+                        <div id="canvas-util-div">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="aboutme" class="container">
+            <h2 class="subtitle">About Me</h2>
+            <div class="inner-div">
+                <p>CS student, skier, cautiously optimistic, exceptionally boring. Dumb as it gets, wants to go fast. An enigma to myself. My name is Jean-Baptiste. You have no idea how high I can fly.</p>
+                <ul class="text">
+                    <li>Some coding projects I made are on <a href="https://github.com/jbmichel14" target="_blank"> Github</a></li>
+                    <li>You'll find some ski clips and short films on <a href="https://www.youtube.com/channel/UCVGWAdP7vvpnJeZBCQ_4Q-Q" target="_blank"> YouTube</a></li>
+                    <li>Contact me on <a href="mailto:jean-baptiste.michel@alumni.epfl.ch" target="_blank"> jean-baptiste.michel@alumni.epfl.ch</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer class="footer-div">
+        <p>🚧 Pardon the dust... this site is a work in progress. 🚧</p>
+        <p style="font-size: .75rem">© 2022 JEAN-BAPTISTE MICHEL</p>
+    </footer>
+</body>
+</html>
