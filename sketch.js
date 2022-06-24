@@ -29,7 +29,7 @@ function setup() {
   hsb1 = 0;
 
   // SET UP FOR SOUND FILE
-  song = loadSound("80degrees.mp3", loaded); // little hack so it works
+  song = loadSound("wonder.mp3", loaded); // little hack so it works
 
   // SET UP FOR AMPLITUDE
   amplitude = new p5.Amplitude(0.9); //0.9 is smoothing
