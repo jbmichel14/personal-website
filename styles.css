@@ -284,7 +284,9 @@ a:hover {
     }
 }
 
-@media (max-width: 600px) {
+@media only screen 
+    and (max-device-width: 812px) 
+    and (-webkit-min-device-pixel-ratio: 3) {
     body {
         grid-template-areas: 
             ". header header header ."
