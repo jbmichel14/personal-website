@@ -11,14 +11,7 @@ body {
     font-family: "SFRounded",ui-rounded,"SF Pro Rounded",system-ui,"Helvetica Neue","Arial","Helvetica",sans-serif;
 }
 
-.home-logo {
-    transition: all .2s linear;
-    cursor: pointer;
-}
 
-.home-logo:hover {
-    transform: scale(1.2);
-}
 
 .title-div {
     display: flex;
@@ -28,6 +21,15 @@ body {
     justify-content: start;
     padding: 1%;
     grid-area: header;
+}
+
+.home-logo {
+    transition: all .2s linear;
+    cursor: pointer;
+}
+
+.home-logo:hover {
+    transform: scale(1.2);
 }
 
 .title {
@@ -229,7 +231,7 @@ main {
 }
 
 
-p, h3, .text {
+p, h3, .text, .disclaimer {
     color: rgb(142, 148, 161);
 }
 
@@ -279,5 +281,110 @@ a:hover {
     }
     100% {
         background-color: rgb(255, 0, 0)
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        grid-template-areas: 
+            ". header header header ."
+            ". socials socials socials ."
+            "main main main main main"
+            "footer footer footer footer footer"
+        ;
+    }
+
+    .title-div {
+        flex-direction: column;
+        margin-top: 33vh;
+        margin-bottom: 50vh;
+    }
+
+    .home-logo {
+        font-size: 4rem;
+        transition: none;
+        margin-bottom: 0%;
+    }
+
+    .home-logo:hover {
+        transform: none;
+    }
+
+    .title {
+        font-size: 4rem;
+        margin-top: 0%
+    }
+
+    .socials-div {
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 33vh;
+    }
+
+    .social {
+        font-size: 2rem;
+        margin-top: 2.5%;
+        margin-bottom: 2.5%;
+    }
+
+    .social:hover {
+        transform: none;
+    }
+
+    .subtitle {
+        font-size: 10vw;
+        margin-bottom: 2%;
+    }
+
+    p, h3, .text {
+        font-size: 5vw;
+        padding-left: 1%;
+        padding-right: 1%;
+        list-style-position: inside;
+    }
+
+    .mp3-buttons-div {
+        flex-direction: column;
+    }
+
+    .load-button {
+        margin: 0% 0%;
+        transition: none;
+        font-size: 5vw;
+    }
+
+    .load-button:hover {
+        transform: none;
+    }
+
+    .playpause {
+        padding: 1% 2%;
+        margin: 0 2.5%;
+        font-size: 20vw;
+        transition: none;
+        text-shadow: 0 0 0.1em rgb(128, 156, 186);
+        opacity: 1;
+    }
+    
+    .playpause:hover {
+        transform: none;
+    }
+
+    #volume-emoji {
+        display: none;
+    }
+
+    .volume-slider {
+        display: none;
+    }
+
+    .canvas-div {
+        margin-top: 5%;
+    }
+
+    .disclaimer {
+        font-size: 3vw;
     }
 }
