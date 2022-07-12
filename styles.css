@@ -301,7 +301,7 @@ a:hover {
     }
 
     .home-logo {
-        font-size: 4rem;
+        font-size: 15vw;
         transition: none;
         margin-bottom: 0%;
     }
@@ -311,7 +311,7 @@ a:hover {
     }
 
     .title {
-        font-size: 4rem;
+        font-size: 15vw;
         margin-top: 0%
     }
 
@@ -324,7 +324,7 @@ a:hover {
     }
 
     .social {
-        font-size: 2rem;
+        font-size: 7.5vw;
         margin-top: 2.5%;
         margin-bottom: 2.5%;
     }
